@@ -1,0 +1,128 @@
+html {
+  background: coral;
+  background-image: url("../img/crab_500.png");
+  background-position: 20px;
+  background-repeat: repeat;
+}
+
+body {
+  background: #F0F8FF;
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+  margin: auto;
+  padding: 4em;
+  max-width: 1000px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-family: Satisfy, monospace;
+  font-size: 3em;
+  margin-top: 0;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2.5em;
+}
+
+h2::before {
+  content: "* ";
+  color: green;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+body:has(img:active) {
+  height: 100%;
+  overflow: hidden;
+}
+
+div:has(img:active) {
+  height: 201px;
+}
+
+img:active {
+  transform: scale(2) translate(-25%, -25%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 0 99999px rgb(0, 0, 0, .5);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:select {
+  text-decoration: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.haiku {
+  margin-left: 2em;
+}
+
+.essay {
+  width: 50%;
+}
+
+.essay>p {
+  text-indent: 2em;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: lightgray;
+}
+
+table {
+  table-layout: fixed;
+  width: 90%;
+}
+
+.anything {
+  background: green;
+}
+
+.dinner {
+  background: orange;
+}
+
+.drive {
+  background: yellow;
+}
+
+.school {
+  background: red;
+}
+
+.sleep {
+  background: lightgray;
+}
+
+.work {
+  background: lightblue;
+}
